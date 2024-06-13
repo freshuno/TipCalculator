@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(159, 189, 214);
+    font-family: 'Space Mono',
+        monospace;
+}
+
+
+
+#spliter {
+    position: absolute;
+    top: 15%;
+    left: 47%;
+}
+
+#spliter:hover {
+    cursor: pointer;
+}
+
+.box {
+    background-color: white;
+    height: 40vh;
+    width: 40vw;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    display: flex;
+}
+
+.box1 {
+    height: 35vh;
+    width: 18vw;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.box2 {
+    height: 37vh;
+    width: 18vw;
+    background-color: rgb(0, 59, 56);
+    position: relative;
+    border-radius: 15px;
+    top: 5%;
+    left: 5%;
+}
+
+#pole,
+#pole2 {
+    background-color: rgb(222, 241, 240);
+    display: flex;
+    height: 40px;
+    width: 17vw;
+    display: flex;
+    margin: 0;
+}
+
+#pole img {
+    height: 25px;
+    width: 15px;
+    top: 22%;
+    left: 15%;
+    position: relative;
+}
+
+#pole2 img {
+    position: relative;
+    height: 28px;
+    top: 17%;
+    left: 3%;
+}
+
+.bill {
+    margin-bottom: 8px;
+    position: relative;
+    color: rgb(0, 59, 56);
+    font-weight: 700;
+}
+
+.bill2 {
+    margin-top: 25px;
+    position: relative;
+    color: rgb(0, 59, 56);
+    font-weight: 700;
+}
+
+input {
+    color: rgb(0, 59, 56);
+    opacity: 60%;
+    font-size: 25px;
+    position: absolute;
+    right: 3%;
+    text-align: right;
+    font-weight: 700;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+input:focus {
+    border: 3px solid rgb(38, 192, 171);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.redborder {
+    border: 3px solid red;
+}
+
+.obrazek {
+    position: relative;
+    left: 3%;
+    top: 1%;
+}
+
+.tips {
+    height: 100px;
+    width: 300px;
+    position: relative;
+}
+
+.tips1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tips2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+.tiplist {
+    background-color: rgb(0, 59, 56);
+}
+
+.tipactive {
+    background-color: rgb(38, 192, 171);
+}
+
+#tip5,
+#tip10,
+#tip15,
+#tip25,
+#tip50 {
+    border-radius: 7px;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#tip5 {
+    padding: 6px 25px;
+}
+
+#tip10,
+#tip15,
+#tip25,
+#tip50 {
+    padding: 6px 20px;
+}
+
+
+#tip5,
+#tip10,
+#tip15,
+#tip25,
+#tip50,
+#tipcustom {
+    transition: 0.2s;
+}
+
+#tipcustom {
+    padding: 5px 1px;
+    border-radius: 7px;
+    background-color: rgb(216, 210, 210);
+    color: rgb(0, 73, 77);
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#tip5:hover,
+#tip10:hover,
+#tip15:hover,
+#tip25:hover,
+#tip50:hover,
+#tipcustom:hover {
+    background-color: rgb(38, 192, 171);
+    color: rgb(0, 73, 77);
+    cursor: pointer;
+}
+
+.totalandamount {
+    margin-top: 40px;
+}
+
+.amount,
+.total {
+    display: flex;
+}
+
+.amounttext p,
+.totaltext p {
+    color: white;
+    margin-left: 10px;
+}
+
+.amounttext p:last-child,
+.totaltext p:last-child {
+    opacity: 40%;
+    margin-top: -20px;
+}
+
+#totalvalue,
+#amountvalue {
+    font-size: 40px;
+    color: rgb(38, 192, 171);
+    position: absolute;
+    right: 5%;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#reset {
+    color: rgb(0, 73, 77);
+    background-color: rgb(38, 192, 171);
+    font-weight: 700;
+    height: 50px;
+    width: 300px;
+    margin-left: 4%;
+    margin-top: 28%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 40%;
+    transition: 0.2s;
+}
+
+.rotate360deg {
+    animation: rotation 2s infinite ease-in-out;
+}
+
+
+#reset p {
+    top: 20%;
+    position: relative;
+}
+
+@media(max-width:1750px) {
+    #reset {
+        width: 200px;
+        left: 45%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+}
+
+@media(max-width:1650px) {
+    #tip5 {
+        padding: 6px 15px;
+    }
+
+    .tips1 {
+        justify-content: space-around;
+        width: 200px;
+        margin-left: 40px;
+    }
+
+    .tips2 {
+        justify-content: space-around;
+        width: 200px;
+        margin-left: 40px;
+    }
+
+    #tip10,
+    #tip15,
+    #tip25,
+    #tip50 {
+        padding: 6px 10px;
+    }
+
+    #tipcustom {
+        padding: 2px 0px;
+    }
+
+    .box2 {
+        width: 250px;
+        left: 10%;
+    }
+}
+
+@media(max-width:1450px) {
+
+    #totalvalue,
+    #amountvalue {
+        font-size: 25px;
+    }
+
+    .amounttext p,
+    .totaltext p {
+        font-size: 15px;
+    }
+
+    #tip5,
+    #tip10,
+    #tip15,
+    #tip25,
+    #tip50 {
+        font-size: 15px;
+    }
+
+    #tipcustom {
+        font-size: 20px;
+    }
+}
